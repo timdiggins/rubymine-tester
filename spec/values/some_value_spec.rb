@@ -1,9 +1,9 @@
 require 'rspec'
 
 describe SomeValue do
-  describe '#to_s' do
-    it 'works' do
-      expect(SomeValue.new.to_s).to include("SomeValue")
+  describe "my_method" do
+    it "raises" do
+      expect { SomeValue.new.my_method }.to raise_error(/fish/)
     end
   end
 end
